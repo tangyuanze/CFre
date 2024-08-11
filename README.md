@@ -92,4 +92,5 @@ CFre is an efficient Abaqus plug-in tool for probabilistic reliability assessmen
 ![image-6](https://github.com/user-attachments/assets/ca1b5e72-909f-409a-90a6-9b999a8364df)
 --- 
 **For more information on this work, please consult the paper.**
+
 The reliability assessment plug-in for *ANSYS Workbench* is under development ...
