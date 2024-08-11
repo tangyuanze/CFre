@@ -35,7 +35,7 @@ CFre is an efficient Abaqus plug-in tool for probabilistic reliability assessmen
 * The ‘Fatigue’ category contains parameters of the Critical Plane-based Method (*CPM*) and Ramberg-Osgood (*RO*) models. Detailed expression for these life models can be referred to https://doi.org/10.1016/j.ress.2022.108523.
 * Recommendation: The group of *{sigmaf, epsilonf, E, n, m, n1, wfcrit}* are independent variables to be discretized for model parameters.
 
-![alt text](image-1.png)
+![image-1](https://github.com/user-attachments/assets/4aa2eacd-272b-4de0-b3d6-fe6813b379d8)
 #### 2. Uncertainty TAB
 ##### Characterize the Material/Model parameters uncertainty in box (I)
 * Select the probabilistic distributions in drop-down list, including normal distribution, lognormal distribution, two-parameter Weibull distribution
@@ -49,7 +49,7 @@ CFre is an efficient Abaqus plug-in tool for probabilistic reliability assessmen
 * Enter the name of the load with the mean and CV. The direction of the load should be selected in the drop-down list (It follows the same symbol definition as in Abaqus CAE. ‘Magnitude’ is for the amplitude, ‘CF*i*’ is the three directions of force, ‘U*i*’ and ‘UR*i*’ are the three translational and rotational degrees of freedom for displacement loading respectively (*i*=1, 2, 3). For example, if the load is a centrifugal force on rotating structures, users should select ‘Magnitude’ and enter the rotating speed as the mean.). 
 * Enter the mean and the CV of hold time, and the name of the amplitude applied to the load in Abaqus, if hold time is considered to be a random variable.
 
-![alt text](image-2.png)
+![image-2](https://github.com/user-attachments/assets/33bf7110-bde5-4bc0-87bb-6ae82d5090e5)
 #### 3. Surrogate Model TAB
 ##### Choose the training dataset source in box (I)
 * The dataset can either be derived from the FEM results or provided by users in other Excel files, or just conduct FEM and no training. 
@@ -58,7 +58,7 @@ CFre is an efficient Abaqus plug-in tool for probabilistic reliability assessmen
 * Four surrogate modelling approaches can be chosen.
 * Use SVR for sample expansion if needed and specify the size of the virtual data to be generated. 
 
-![alt text](image-3.png)
+![image-3](https://github.com/user-attachments/assets/56ce1b67-4f4d-49c0-91b8-120834abc266)
 #### 4. Result Analysis TAB
 ##### Damage and life evaluation
 * Specify the node points to be evaluated, otherwise the maximum damage points will be focused on.
@@ -80,16 +80,16 @@ CFre is an efficient Abaqus plug-in tool for probabilistic reliability assessmen
 * Add more condition cases, after the original calculation completing.
 * Choose the variable you want to change from drop-down list, and enter the mean value list for the variable in the form of 'start value, stop value, number of point'.
   
-![alt text](image-4.png)
+![image-4](https://github.com/user-attachments/assets/c18fe5a0-5065-4837-8f6a-68bd131038a1)
 #### 5. Execution and output
 * Finally, after selecting the desired options on the GUI, users click the ‘OK’ button at the bottom of the interface to initiate the execution of the kernel program. The process information is displayed in both Abaqus CAE message area and Abaqus command line window. 
 * In the message area, users can find the information related to the FEM process, including the variable changes, detailed information for dangerous points, and the running time with a separation between CPU time and clock time (The CPU time refers to the total running time across all CPUs and the clock time represents the real-world time). The CPU time and the clock time of the total program are almost the same because the Python kernel program runs on a single CPU by default, differing from FEM where users can specify the number of CPUs to be used. 
 * The information related to the surrogate modelling approach is displayed in the command line window, because this part of program is embedded within the main program in the form of an executable file. The information contains the model name, the optimal model parameters identified through the grid search algorithm, and the evaluation indicators obtained by the cross-validation method. 
 * Upon completion of the job, three Excel files (dataSet.xls, mcsData.xls, time.xls), a certain number of figure results selected from the Visualization TAB, and a trained surrogate model file (model name.pkl) are saved in the working directory of Abaqus. 
  
-![alt text](image-5.png)
+![image-5](https://github.com/user-attachments/assets/0f1405b6-9e09-4878-94a6-ef8e3e29be3e)
 * Here are some illustrative images that can be output:
-![alt text](image-6.png)
+![image-6](https://github.com/user-attachments/assets/ca1b5e72-909f-409a-90a6-9b999a8364df)
 --- 
 **For more information on this work, please consult the paper.**
 The reliability assessment plug-in for *ANSYS Workbench* is under development ...
