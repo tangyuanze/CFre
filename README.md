@@ -8,7 +8,8 @@ Contact: yztangapr@gmail.com
 # Introduction
 ---
 CFre is an efficient Abaqus plug-in tool for probabilistic reliability assessment, combining uncertainty quantification, FE simulation, surrogate model reliability assessment methods, and visualization into one platform based on Python.
-![alt text](image.png)
+![image](https://github.com/user-attachments/assets/ad1ee926-3092-4b6e-8134-6522bb9a5268)
+
 # Installation
 ---
 1. The software package "CFre_ReleasedV*x*" should be placed in the Abaqus_plugins directory under the Abaqus parent directory. You can find ‘Creep-Fatigue Analysis - Reliability’ tab under the ‘Plug-ins’ toolbar once opening Abaqus CAE.
