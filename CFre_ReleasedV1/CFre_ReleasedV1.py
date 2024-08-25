@@ -212,9 +212,9 @@ def sampling(temp,Mn,keys,ST, density, conductivity,expansion,E,u,fai,n1,wfcrit,
             else:
                 Eu_data = ela_data
             if mdb.models[Mn].materials[Matn].elastic.temperatureDependency == ON:
-                os.system('{}/lhs.exe {} {} {} {} {}'.format(forpath, 1, tuple2str(Eu_data), ST,D5,C5))
+                os.system('{}/lhs.exe {} {} {} {} {}'.format(forpath, 1, tuple2str(Eu_data), ST,D5,C1))
             else:
-                os.system('{}/lhs.exe {} {} {} {} {}'.format(forpath, 1, list2str(Eu_data[0]), ST,D5,C5))
+                os.system('{}/lhs.exe {} {} {} {} {}'.format(forpath, 1, list2str(Eu_data[0]), ST,D5,C1))
             ela_rnd = np.load("{}/lhs_data.npy".format(wkpath))
         # 密度
         if density:
