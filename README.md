@@ -1,9 +1,11 @@
 # CFre
 ---
 ### Source code for Creep-fatigue reliability assessment plug-in for Abaqus
-Developer: Yuanze Tang
+Developer: Yuanze Tang  
 Contact: yztangapr@gmail.com
 
+The relevant article can be found at: https://doi.org/10.1016/j.softx.2024.101958.  
+Citation is appreciated if this repo contributes to your research.
 
 # Introduction
 ---
@@ -94,3 +96,4 @@ CFre is an efficient Abaqus plug-in tool for probabilistic reliability assessmen
 **For more information on this work, please consult the paper.**
 
 The reliability assessment plug-in for *ANSYS Workbench* is under development ...
+
